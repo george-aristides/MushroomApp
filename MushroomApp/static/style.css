@@ -1,0 +1,37 @@
+body {
+    background-color: #fffdd0; /* Cream background */
+    color: #000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #8b0000; /* Dark red color */
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+}
+
+select {
+    width: 150px;
+}
+
+input[type="submit"] {
+    background-color: #8b0000; /* Dark red color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+a {
+    color: #8b0000; /* Dark red color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

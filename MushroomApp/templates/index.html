@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mushroom Classification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Mushroom Classification</h1>
+    <form method="post">
+        {% for feature, options in feature_values.items() %}
+            <label for="{{ feature }}">{{ feature.replace('-', ' ').capitalize() }}:</label>
+            <select name="{{ feature }}" id="{{ feature }}" required>
+                {% for option in options %}
+                    <option value="{{ option }}">{{ option }}</option>
+                {% endfor %}
+            </select>
+            <br><br>
+        {% endfor %}
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
